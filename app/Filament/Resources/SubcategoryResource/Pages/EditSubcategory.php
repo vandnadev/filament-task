@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Filament\Resources\SubcategoryResource\Pages;
+
+use App\Filament\Resources\SubcategoryResource;
+use Filament\Actions;
+use Filament\Resources\Pages\EditRecord;
+
+class EditSubcategory extends EditRecord
+{
+    protected static string $resource = SubcategoryResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\DeleteAction::make(),
+        ];
+    }
+
+    protected function getRedirectUrl(): string
+    {
+        // Redirect to the list page after editing
+        return $this->getResource()::getUrl('index');
+    }
+}
