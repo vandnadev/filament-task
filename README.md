@@ -1,7 +1,9 @@
 # Laravel FilamentPHP Setup
 
 ## Requirements
-- PHP >= 8.3, Composer
+- PHP >= 8.1
+- Composer
+- Laravel 10
 
 
 ## Setup in One Go
